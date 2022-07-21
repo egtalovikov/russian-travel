@@ -12,8 +12,9 @@
   margin: 0 0 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .place {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     grid-template-areas:
     "title website"
     "image text";
@@ -25,12 +26,18 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .place {
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+  }
   .place:not(:last-child) {
     margin: 0 0 80px;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .place {
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  }
   .place:not(:last-child) {
     margin: 0 0 80px;
   }
