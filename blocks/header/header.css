@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px 0;
+  margin: 0 0 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 28px 24px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 28px 48px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    margin: 0 0 56px;
+  }
+}

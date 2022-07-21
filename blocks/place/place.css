@@ -1,0 +1,37 @@
+.place {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-areas:
+  "title"
+  "website"
+  "image"
+  "text";
+}
+
+.place:not(:last-child) {
+  margin: 0 0 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .place {
+    grid-template-areas:
+    "title website"
+    "image text";
+    column-gap: 16px;
+  }
+  .place:not(:last-child) {
+    margin: 0 0 72px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .place:not(:last-child) {
+    margin: 0 0 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .place:not(:last-child) {
+    margin: 0 0 80px;
+  }
+}
