@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .places {
     padding: 0 24px;
     margin: 0 0 90px;
@@ -16,6 +16,7 @@
 @media screen and (min-width: 1024px) {
   .places {
     padding: 0 48px;
+    margin: 0 0 92px;
   }
 }
 @media screen and (min-width: 1280px) {

@@ -4,6 +4,7 @@
   font-weight: 900;
   margin: 0 0 16px;
   text-align: center;
+  max-width: 288px;
 }
 
 @media screen and (min-width: 768px) {
@@ -11,5 +12,6 @@
     font-size: 96px;
     line-height: 100px;
     margin: 0 0 32px;
+    max-width: 720px;
   }
 }

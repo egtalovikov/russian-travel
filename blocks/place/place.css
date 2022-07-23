@@ -1,24 +1,26 @@
 .place {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(1, 320px);
   grid-template-areas:
   "title"
   "website"
   "image"
   "text";
+  row-gap: 32px;
 }
 
 .place:not(:last-child) {
   margin: 0 0 50px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .place {
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     grid-template-areas:
     "title website"
     "image text";
     column-gap: 16px;
+    row-gap: 48px;
   }
   .place:not(:last-child) {
     margin: 0 0 72px;
@@ -37,8 +39,5 @@
 @media screen and (min-width: 1280px) {
   .place {
     grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
-  }
-  .place:not(:last-child) {
-    margin: 0 0 80px;
   }
 }
