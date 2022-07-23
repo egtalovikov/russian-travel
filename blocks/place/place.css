@@ -1,6 +1,6 @@
 .place {
   display: grid;
-  grid-template-columns: repeat(1, 320px);
+  grid-template-columns: 320px;
   grid-template-areas:
   "title"
   "website"
@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 768px) {
   .place {
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: 340px 1fr;
     grid-template-areas:
     "title website"
     "image text";
@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 1024px) {
   .place {
-    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    grid-template-columns: 440px 1fr;
   }
   .place:not(:last-child) {
     margin: 0 0 80px;
@@ -38,6 +38,6 @@
 
 @media screen and (min-width: 1280px) {
   .place {
-    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    grid-template-columns: 460px 1fr;
   }
 }
