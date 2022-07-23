@@ -19,7 +19,7 @@
     grid-template-areas:
     "title website"
     "image text";
-    column-gap: 16px;
+    column-gap: 28px;
     row-gap: 48px;
   }
   .place:not(:last-child) {
@@ -30,6 +30,7 @@
 @media screen and (min-width: 1024px) {
   .place {
     grid-template-columns: 440px 1fr;
+    column-gap: 32px;
   }
   .place:not(:last-child) {
     margin: 0 0 80px;
@@ -38,6 +39,7 @@
 
 @media screen and (min-width: 1280px) {
   .place {
+    column-gap: 40px;
     grid-template-columns: 460px 1fr;
   }
 }
