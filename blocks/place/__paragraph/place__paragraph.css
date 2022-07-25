@@ -8,11 +8,6 @@
   margin: 0 0 25px;
 }
 
-@media screen and (min-width: 768px) {
-  .place__paragraph:not(:last-child) {
-    margin: 0 0 25px;
-  }
-}
 @media screen and (min-width: 1024px) {
   .place__paragraph {
     font-size: 18px;
